@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<creators>
+    <creator>
+        <username>Joe Smith</username>
+        <password>password1</password>
+    </creator>
+    <creator>
+        <username>Jane Smith</username>
+        <password>password!!</password>
+    </creator>
+</creators>
