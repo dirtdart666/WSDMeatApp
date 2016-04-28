@@ -3,8 +3,6 @@ package uts.wsd;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -14,16 +12,12 @@ public class Creators implements Serializable {
 	@XmlElement(name = "creator")
 	private ArrayList<Creator> list = new ArrayList<>();
 
-	public ArrayList<Creator> getList() {
-		return list;
+	public Creators() {
+		// TODO Auto-generated constructor stub
 	}
 
-	public void addCreator(Creator creator) {
+	public void add(Creator creator) {
 		list.add(creator);
-	}
-	
-	public void setList(ArrayList<Creator> list) {
-		this.list = list;
 	}
 
 	public Creator login(String username, String password) {
@@ -33,6 +27,10 @@ public class Creators implements Serializable {
 			}
 		}
 		return null;
+	}
+
+	public ArrayList<Creator> getList() {
+		return list;
 	}
 
 }
